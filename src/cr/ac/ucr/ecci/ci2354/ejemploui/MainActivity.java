@@ -24,8 +24,10 @@ public class MainActivity extends Activity {
         String tag = (String) view.getTag();
         if ("DRAWABLE".equals(tag)) {
             startActivity(new Intent(this, EjemploDrawableActivity.class));
-        } else if ( "ANIMATION".equals(tag)){
+        } else if ("ANIMATION".equals(tag)) {
             startActivity(new Intent(this, EjemploAnimationActivity.class));
+        } else if ("DIALOG".equals(tag)) {
+            startActivity(new Intent(this, DialogSampleActivity.class));
         }
     }
 }
