@@ -1,18 +1,17 @@
 package cr.ac.ucr.ecci.ci2354.ejemploui;
 
 import android.os.Bundle;
-import android.app.Activity;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+import cr.ac.ucr.ecci.ci2354.ejemploui.actionbar.ActionBarActivity;
 
-public class EjemploDrawableActivity extends Activity {
+public class EjemploDrawableActivity extends ActionBarActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ejemplo_drawable);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

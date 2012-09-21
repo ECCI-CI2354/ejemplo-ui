@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
     <item
-        android:color="#FF0000"
+        android:drawable="@drawable/blue_rounded_rectangle"
         android:state_pressed="true" 
         ></item>
 	<item
-	    android:color="#0000FF"/>
+	    android:drawable="@drawable/red_rounded_rectangle" />
 </selector>

@@ -1,5 +1,6 @@
 package cr.ac.ucr.ecci.ci2354.ejemploui;
 
+import cr.ac.ucr.ecci.ci2354.ejemploui.actionbar.ActionBarActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -11,7 +12,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class EjemploAnimationActivity extends Activity {
+public class EjemploAnimationActivity extends ActionBarActivity {
     ImageView mFYeah;
 
     Animation fadeIn;
@@ -20,7 +21,6 @@ public class EjemploAnimationActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animation);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         mFYeah = (ImageView) findViewById(R.id.animation_fyeah);
         fadeIn = AnimationUtils.loadAnimation(this, R.anim.hyperspace_jump);
