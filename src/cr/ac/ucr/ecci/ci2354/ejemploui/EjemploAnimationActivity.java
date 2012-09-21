@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
@@ -22,7 +23,25 @@ public class EjemploAnimationActivity extends Activity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
         mFYeah = (ImageView) findViewById(R.id.animation_fyeah);
-        fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        fadeIn = AnimationUtils.loadAnimation(this, R.anim.hyperspace_jump);
+        fadeIn.setAnimationListener( new AnimationListener() {
+			
+			@Override
+			public void onAnimationStart(Animation animation) {
+				mFYeah.setVisibility(View.INVISIBLE);
+			}
+			
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onAnimationEnd(Animation animation) {
+				mFYeah.setVisibility(View.VISIBLE);
+			}
+		});
     }
 
     @Override
