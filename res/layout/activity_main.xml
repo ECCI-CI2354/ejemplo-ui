@@ -24,5 +24,16 @@
         android:onClick="launchActivity"
         android:tag="ANIMATION"
         android:text="@string/animation" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_animation_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="launchActivity"
+        android:tag="DIALOG"
+        android:text="Dialogo" />
     
 </RelativeLayout>

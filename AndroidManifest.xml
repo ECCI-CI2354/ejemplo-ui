@@ -34,6 +34,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cr.ac.ucr.ecci.ci2354.ejemploui.MainActivity" />
         </activity>
+        <activity
+            android:name=".DialogSampleActivity"
+            android:label="@string/title_activity_dialog_sample" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
